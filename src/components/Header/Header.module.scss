@@ -1,0 +1,21 @@
+@import "./src/App";
+
+.header_wrapper {
+  text-align: center;
+  padding: 20px 40px 0;
+
+  .header_logo {
+    display: inline-block;
+  }
+
+ .header_title {
+   text-align: center;
+   margin: 10px 0;
+   color: $color-primary;
+   letter-spacing: 3px;
+   font-weight: 800;
+   font-size: 25px;
+   font-family: $fontM;
+   text-transform: uppercase;
+ }
+}

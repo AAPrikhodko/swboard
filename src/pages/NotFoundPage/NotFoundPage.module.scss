@@ -1,0 +1,17 @@
+@import "./src/App";
+
+.not_found_title {
+  font: 500 30px $fontM;
+  text-align: center;
+  letter-spacing: 2px;
+  color: $color-third;
+  padding: 100px 15px 50px;
+}
+
+.not_found_text {
+  font: 500 20px $fontM;
+  text-align: center;
+  letter-spacing: 2px;
+  color: $color-third;
+  padding: 0 15px;
+}

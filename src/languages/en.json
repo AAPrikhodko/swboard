@@ -1,0 +1,35 @@
+{
+  "header": {
+    "title": "Board"
+  },
+  "footer": {
+    "reservedText": "All rights reserved"
+  },
+  "characters": {
+    "title": "People",
+    "searchPlaceholder": "search by name"
+  },
+  "characterCard": {
+    "details": "Details",
+    "yearOfBirth": "Year of Birth",
+    "gender": "Gender",
+    "height": "Height"
+  },
+  "notFound": {
+    "title": "Page was not found",
+    "text": "The page you requested could not be found"
+  },
+  "loader": {
+    "text": "Loading ..."
+  },
+  "buttons": {
+    "back": "Back",
+    "save": "Save",
+    "search": "Search"
+  },
+  "notifications": {
+    "save": "Item was saved",
+    "saveLocally": "Item was saved locally",
+    "error": "Error occurs: "
+  }
+}

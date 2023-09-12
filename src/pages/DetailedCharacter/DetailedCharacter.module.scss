@@ -1,0 +1,29 @@
+.detailedCharacter_wrapper {
+  background-color: rgba(201, 182, 23, 0.7);
+  border-radius: 10px;
+  margin: 0 20px;
+  padding: 15px;
+
+  .detailedCharacter_buttonsWrapper {
+    margin: 15px 35px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .action_button {
+    width: 150px;
+    margin: 0 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .detailedCharacter_item {
+    margin-bottom: 15px;
+    p {
+      margin-bottom: 0;
+    }
+    div {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+@import 'antd/dist/reset.css';
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Merriweather:ital,wght@0,300;1,400&display=swap');
+
+$color-primary: #C9B617;
+$color-secondary: #000000FF;
+$color-third: #E4A2A4FF;
+$color-fourth: #FFFFFFFF;
+
+$fontM: "Merriweather";
+$fontJ: "Josefin+Sans";
+
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: url("img/bg.png") no-repeat fixed;
+  background-size: cover;
+}
+
+.content{
+  flex:1;
+}

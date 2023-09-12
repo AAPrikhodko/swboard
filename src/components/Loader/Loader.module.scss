@@ -1,0 +1,11 @@
+@import "./src/App";
+
+.loader_text {
+  text-align: center;
+  align-items: center;
+  font-size: 30px;
+  letter-spacing: 3px;
+  font-family: $fontM;
+  color: $color-primary;
+  margin: 100px 0;
+}

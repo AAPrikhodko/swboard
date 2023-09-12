@@ -1,0 +1,18 @@
+@import "./src/App";
+
+.footer_wrapper {
+
+  font-size: 14px;
+
+  hr{
+    border: 1px solid rgba(201, 182, 23, 0.8);
+    border-bottom-width: 0;
+  }
+
+  div {
+    color: $color-primary;
+    opacity: 0.7;
+    text-align: center;
+    margin: 15px 0;
+  }
+}
