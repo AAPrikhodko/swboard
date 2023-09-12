@@ -35,42 +35,44 @@ const Characters = () => {
 
     return (
         <div className={styles.characters_wrapper}>
-            <div className={styles.characters_title}>{textData.characters.title}</div>
-            <Search
-                className={styles.characters_searchBar}
-                placeholder={textData.characters.searchPlaceholder}
-                enterButton={textData.buttons.search}
-                size="large"
-                disabled={!isPageLoaded}
-                loading={!isSearchLoaded}
-                onSearch={(value) => {
-                    setIsSearchLoaded(false)
-                    setTerm(value)
-                    !value && setPage(1)
-                }}
-            />
             {
                 isPageLoaded
-                    ? <List
-                        className={styles.characters_list}
-                        grid={{ gutter: 25, column: 1, md: 2, lg:3, xl: 4, xxl: 4}}
-                        dataSource={characters}
-                        renderItem={item => (
-                            <List.Item>
-                                <CharacterCard character={item}/>
-                            </List.Item>
-                        )}
-                        pagination={{
-                            align: "center",
-                            showSizeChanger: false,
-                            current: page,
-                            total: totalItems,
-                            onChange: (page) => {
-                                setIsPageLoaded(false)
-                                setPage(page)
-                            }
-                        }}
-                       />
+                    ? <>
+                        <div className={styles.characters_title}>{textData.characters.title}</div>
+                        <Search
+                            className={styles.characters_searchBar}
+                            placeholder={textData.characters.searchPlaceholder}
+                            enterButton={textData.buttons.search}
+                            size="large"
+                            disabled={!isPageLoaded}
+                            loading={!isSearchLoaded}
+                            onSearch={(value) => {
+                                setIsSearchLoaded(false)
+                                setTerm(value)
+                                !value && setPage(1)
+                            }}
+                        />
+                        <List
+                            className={styles.characters_list}
+                            grid={{ gutter: 25, column: 1, md: 2, lg:3, xl: 4, xxl: 4}}
+                            dataSource={characters}
+                            renderItem={item => (
+                                <List.Item>
+                                    <CharacterCard character={item}/>
+                                </List.Item>
+                            )}
+                            pagination={{
+                                align: "center",
+                                showSizeChanger: false,
+                                current: page,
+                                total: totalItems,
+                                onChange: (page) => {
+                                    setIsPageLoaded(false)
+                                    setPage(page)
+                                }
+                            }}
+                           />
+                    </>
                     : <Loader />
             }
         </div>
